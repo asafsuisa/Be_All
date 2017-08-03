@@ -1,0 +1,20 @@
+input#search {
+    background-image: url("/assets/search-icon.svg");
+    background-repeat: no-repeat;
+    text-indent: 20px;
+    background-position-y: 8px;
+    background-position-x: 5px;
+    border-radius: 30px;
+    width:17%;
+}
+
+
+.headerContainer
+{
+    display: flex;
+    margin-bottom: 2%;
+}
+.btn-group
+{
+    padding-right: 30%
+}

@@ -1,0 +1,19 @@
+
+<div class="headerContainer">
+  <div  class="btn-group" dropdown>
+    <button dropdownToggle type="button" class="form-control dropdown-toggle">
+      <b>Type:</b> {{selectedRoute}} <span class="caret" ></span>
+    </button>
+    <ul *dropdownMenu class="dropdown-menu" role="menu" >
+      <li *ngFor="let route of routes" role="menuitem" (click)="changeRoute(route.route)">
+        <a *ngIf="route.route" class="dropdown-item">{{route.type}}</a>
+      </li>
+    </ul>
+  </div>
+  <input class="form-control" id="search" name="search" type="text" [(ngModel)]="searchService.currSearch" 
+  placeholder="Search {{selectedRoute}}" (ngModelChange)="annocedSearch()" [disabled]="!selected"/>
+</div>
+  
+<router-outlet (activate)="changeComponent($event)"></router-outlet>
+
+
