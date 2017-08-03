@@ -18,8 +18,8 @@ import 'rxjs/add/operator/share';
 */
 @Component({
   selector: 'company-list',
-  templateUrl: './companyList.component.html',
-  styleUrls: ['./companyList.component.css']
+  templateUrl: './companyList.Component.html',
+  styleUrls: ['./companyList.Component.css']
 })
 export class companyListComponent implements OnInit,AfterContentInit,OnDestroy {
   private searchSubject = new Subject<searchObject>();
